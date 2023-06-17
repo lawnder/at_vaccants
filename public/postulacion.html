@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mostrar Información del Formulario</title>
+  <link rel="stylesheet" href="css/postulacion.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .info-container {
+      background-color: #f8f9fa;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .info-container h2 {
+      margin-bottom: 20px;
+    }
+
+    .form-container {
+      background-color: #f8f9fa;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h2 {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- AQUI -->
+  <div class="container">
+    <h2 class="col-md-12" id="info-title" style="text-align: center; margin-top: 5%; margin-bottom: 5%;">Vacante</h2>
+    <div class="row">
+          <div class="col-md-6">
+            <div class="info-container" id="formularioInfo">
+          </div>
+      </div>
+      <div class="col-md-6" id="formularioForm">
+        <div class="form-container">
+        <h2>Postulate</h2>
+        <form id="myForm">
+          <div class="form-group">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" class="form-control" id="telefono" placeholder="Ingrese tu telefono">
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+          </div>
+
+          <div class="form-group">
+            <label for="residencia">Lugar de residencia:</label>
+            <input type="text" class="form-control" id="residencia" placeholder="Ingrese su lugar de residencia">
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+      </div>
+
+      <div class="col-md-6 form-container"  id="messageForm" style="display: none; text-align: center;">
+      <h3>¡Se envio tu información con exito!</h3>
+      <h4>En breve nos pondremos en contacto contigo</h4>
+    </div>
+      
+    </div>
+  </div>
+  <!-- AQUI -->
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <script src="js/common_functions.js"></script>
+  <script src="js/postulacion.js"></script>
+</body>
+</html>
