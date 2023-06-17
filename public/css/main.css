@@ -1,0 +1,198 @@
+/* Estilos para el diseño moderno y responsive */
+.container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    margin-top: 6%;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    li {
+      background-color: #f4f4f4;
+      border-radius: 4px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    li a {
+      text-decoration: none;
+      color: #333;
+      /* font-weight: bold; */
+    }
+
+    li a .sp1{
+        padding-right: 15px;
+    }
+
+    li a .sp2{
+        padding-right: 200px;
+    }
+
+    li a:hover {
+      /* background-color: #ddd; */
+      color: #989898;
+    }
+
+    .btn-container {
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .i-vacant{
+      color: #4CAF50;
+      padding-right: 20px;
+    }
+
+  /* HEADER */
+
+  /* Estilos generales */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: rgb(71, 71, 71);
+    color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .logo img{
+    height: 50px;
+  }
+  
+  .navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navigation li {
+    margin-right: 15px;
+  }
+  
+  .navigation li:last-child {
+    margin-right: 0;
+  }
+  
+  .navigation a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navigation a:hover {
+    color: #666;
+  }
+  
+  .login-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #666;
+  }
+
+
+
+  /* LoginForm */
+
+  .login-form {
+    max-width: 400px;
+    padding: 20px 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input, .form-group button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Incluir el relleno y el borde dentro del ancho */
+  }
+  
+  .form-group button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .form-group button:hover {
+    background-color: #0056b3;
+  }
+
+  .alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+  }
+  
+  .alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+  }
